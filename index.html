@@ -73,6 +73,9 @@ td{border:1px solid #ccdee2;padding:6px;background:#fff}
 .fic .ic{width:20px;height:20px}
 .fund h3{margin:0 0 3px;font-size:16px}
 .fund p{margin:0}
+.steps{list-style:none;counter-reset:st;margin:8px 0 2px;padding:0}
+.steps li{counter-increment:st;position:relative;padding-left:30px;margin:8px 0}
+.steps li::before{content:counter(st) ")";position:absolute;left:0;top:0;font-weight:700;color:var(--blue)}
 .pat{background:var(--navy);color:#fff;border-radius:10px;padding:9px 13px;font-size:13.5px;font-weight:600;letter-spacing:.2px;margin:8px 0}
 .pat b{color:#93d8d2}
 .prow{display:flex;align-items:center;gap:9px;margin:6px 0;font-size:12.5px}
@@ -136,26 +139,26 @@ h1{font-size:26px}
 <main><section id="top">
 <div class="chip">THE PLAN</div>
 <h1>The Level-Up Guide<br>to Building Muscle</h1>
-<p style="color:var(--mut)">Four strength workouts, a nine-phase Couch to 5K, and the small set of numbers that make both work — every exercise illustrated, with tempo cues, starting weights and a video.</p>
+<p style="color:var(--mut)">Four strength workouts, a nine-phase Couch to 5K, and the small set of numbers that make both work. Every exercise is illustrated, with tempo cues, starting weights and a video.</p>
 <div class="card">
 <h3 style="margin-top:0">The problem was never information</h3>
 <p>Everyone already knows roughly what to do: lift weights, eat protein, sleep. Knowing it has built precisely zero muscle.</p>
-<p>What actually happens is a burst of motivation, an over-complicated programme, three good weeks — then one missed session becomes a missed week, and six months later the only thing that's changed is the date. Run that cycle a few times and "I can't stick to anything" starts to feel like a personality trait rather than a planning failure.</p>
-<p>So the plan here is deliberately small: four gym sessions rotating through three strength days, three short runs, and a handful of numbers to hit. Few enough moving parts that a bad week can't derail it — and no session ever starts with guesswork, because every exercise comes with an illustration, a starting weight and a video.</p>
+<p>What actually happens is a burst of motivation, an over-complicated programme, three good weeks. Then one missed session becomes a missed week, and six months later the only thing that's changed is the date. Run that cycle a few times and "I can't stick to anything" starts to feel like a personality trait rather than a planning failure.</p>
+<p>So the plan here is deliberately small: four gym sessions rotating through three strength days, three short runs, and a handful of numbers to hit. Few enough moving parts that a bad week can't derail it, and no session ever starts with guesswork, because every exercise comes with an illustration, a starting weight and a video.</p>
 </div>
 <div class="card">
 <h3 style="margin-top:0">How to read the illustration sheets</h3>
 <p style="margin:4px 0">Each exercise has 4 panels: setup, the two movement phases, and key cues. Speed is marked with pills:</p>
 <div class="legend"><span class="pf">SOLID = powerful, ~1 sec</span><span class="ps">DASHED = slow, 2–3 sec</span><span class="ph">DARK = pause / hold</span></div>
-<p style="margin:4px 0">Rule of thumb: <b>be explosive on the effort, fight gravity on the way back</b> — the slow lowering is where most growth happens.</p>
+<p style="margin:4px 0">Rule of thumb: <b>be explosive on the effort, fight gravity on the way back</b>: the slow lowering is where most growth happens.</p>
 </div>
-<p class="disc" style="margin:10px 0">This page documents its author's own training and is published as a personal reference — it isn't coaching, a programme recommendation, or medical advice for anyone else. If anything here is useful to you, adapt it to your own health and circumstances first.</p>
+<p class="disc" style="margin:10px 0">This page documents its author's own training and is published as a personal reference. It isn't coaching, a programme recommendation, or medical advice for anyone else. If anything here is useful to you, adapt it to your own health and circumstances first.</p>
 </section><section id="basics">
 <h2>Section 1 · The fundamentals</h2>
 <p>Eight levers decide whether training works. Get them roughly right and almost any sensible programme succeeds; miss them and no programme can compensate.</p>
 <div class="fund"><div class="fic"><svg class="ic" aria-hidden="true"><use href="#i-trend"/></svg></div><div>
 <h3>Get stronger, or nothing is happening</h3>
-<p>Muscle tracks strength. If the weights you lift creep up across months, muscle is coming with them; if they've been flat for half a year, it isn't — however hard the sessions felt. Keep a log: the logbook is the progress report, because the mirror updates far too slowly to be one.</p></div></div>
+<p>Muscle tracks strength. If the weights you lift creep up across months, muscle is coming with them; if they've been flat for half a year, it isn't, however hard the sessions felt. Keep a log: the logbook is the progress report, because the mirror updates far too slowly to be one.</p></div></div>
 <div class="fund"><div class="fic"><svg class="ic" aria-hidden="true"><use href="#i-gauge"/></svg></div><div>
 <h3>Take sets close to the limit</h3>
 <p>A set counts when the weight visibly slows near the end despite an honest push. Finishing with five easy reps in reserve is a warm-up, whatever the programme calls it. New to lifting? Stopping one or two reps before form falls apart is close enough to grow.</p></div></div>
@@ -167,21 +170,21 @@ h1{font-size:26px}
 <p>Growth happens between sessions, not during them. At 5-6 hours a night recovery lags badly enough to cancel out good training; seven works; eight or more is where you recover fastest. No supplement comes close.</p></div></div>
 <div class="fund"><div class="fic"><svg class="ic" aria-hidden="true"><use href="#i-beef"/></svg></div><div>
 <h3>Hit a protein number daily</h3>
-<p>Roughly 2g per kilo of bodyweight covers nearly everyone. Carrying a lot of body fat? Count from your goal weight instead — aiming for 80 kg means about 160g a day.</p></div></div>
+<p>Roughly 2g per kilo of bodyweight covers nearly everyone. Carrying a lot of body fat? Count from your goal weight instead: aiming for 80 kg means about 160g a day.</p></div></div>
 <div class="fund"><div class="fic"><svg class="ic" aria-hidden="true"><use href="#i-food"/></svg></div><div>
 <h3>Point your calories in one direction</h3>
 <p>Underweight: eat 100-200 kcal above maintenance. Overweight: 300-500 below. In between: eat at maintenance, keep the protein number covered, and let training do the reshaping.</p></div></div>
 <div class="fund"><div class="fic"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></div><div>
 <h3>Measure maintenance, don't guess it</h3>
-<p>Eat the same calories daily for a couple of weeks and weigh in at the same time each morning. A rising trend means surplus; a falling one means deficit. A calculator only supplies the first guess — the trend line is the answer.</p></div></div>
+<p>Eat the same calories daily for a couple of weeks and weigh in at the same time each morning. A rising trend means surplus; a falling one means deficit. A calculator only supplies the first guess; the trend line is the answer.</p></div></div>
 <div class="fund"><div class="fic"><svg class="ic" aria-hidden="true"><use href="#i-repeat"/></svg></div><div>
 <h3>Keep showing up when nothing visible happens</h3>
-<p>Even a perfect week changes nothing you can see — results arrive on a delay measured in months. The plan works for the people still running it in month four. That is the entire trick.</p></div></div>
+<p>Even a perfect week changes nothing you can see; results arrive on a delay measured in months. The plan works for the people still running it in month four. That is the entire trick.</p></div></div>
 </section><section id="warmup">
 <h2>Section 2 · The Upper Lower Split</h2>
 <h3>How to properly warm up (5–10 min)</h3>
-<p><b>Before every exercise:</b> load roughly 70% of your working weight (press the 20 kg dumbbells? warm up with the 14s, or the nearest pair below) and run one crisp <b>"feeler" set</b> — 4-5 technically perfect reps — before the real sets begin.</p>
-<div class="callout">Feeler sets are extra — a 2x6-10 prescription means the feeler first, then 2 working sets.</div>
+<p><b>Before every exercise:</b> load roughly 70% of your working weight (press the 20 kg dumbbells? warm up with the 14s, or the nearest pair below) and run one crisp <b>"feeler" set</b> of 4-5 technically perfect reps before the real sets begin.</p>
+<div class="callout">Feeler sets are extra: a 2x6-10 prescription means the feeler first, then 2 working sets.</div>
 <div class="tw"><table><tr><th colspan="3">BEFORE UPPER BODY DAYS</th></tr><tr><th>Exercise</th><th>Reps</th><th>Cues</th></tr>
 <tr><td>Cable Face Pulls</td><td>20</td><td>Elbows drive back at shoulder height; finish with fists rotated back beside your ears</td></tr>
 <tr><td>Cable External Rotation</td><td>15 ea</td><td>Stand side-on to a stomach-height cable, elbow pinned to your ribs, palm neutral; rotate the forearm outward</td></tr>
@@ -193,12 +196,12 @@ h1{font-size:26px}
 <tr><td>Bridges (Neutral Back)</td><td>20</td><td>Lie on your back, knees bent, feet flat; keep the spine neutral and drive the hips upward</td></tr>
 <tr><td>Bird Dogs (LEGS ONLY)</td><td>10 ea</td><td>From all fours with a flat back, extend one leg behind you over a slow 5 seconds</td></tr>
 <tr><td>Walking Lunges</td><td>20</td><td>Unhurried steps, each knee tracking over its foot</td></tr></table></div>
-<p><span class="k">Why Upper Lower?</span> Every muscle gets trained often, sessions stay a manageable length, and the rotation forgives an imperfect week — a missed workout never disappears, it just moves to the next slot.</p>
-<p>You train strength on <b>Monday, Wednesday and Friday</b>. The four workouts below cycle through those slots in order (Upper A → Lower A → Upper B → Lower B), so week 1 is Upper A / Lower A / Upper B and week 2 picks up with Lower B — just do the next workout in the sequence each strength day.</p>
+<p><span class="k">Why Upper Lower?</span> Every muscle gets trained often, sessions stay a manageable length, and the rotation forgives an imperfect week: a missed workout never disappears, it just moves to the next slot.</p>
+<p>You train strength on <b>Monday, Wednesday and Friday</b>. The four workouts below cycle through those slots in order (Upper A → Lower A → Upper B → Lower B), so week 1 is Upper A / Lower A / Upper B and week 2 picks up with Lower B. Just do the next workout in the sequence each strength day.</p>
 </section><section id="upper-a">
 <div class="chip">WORKOUT 1</div><h2 style="margin-top:2px">Upper A</h2>
 <div class="tw"><table><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Start</th></tr><tr><td><a href="#ex-incline-db-press-how-to">Incline Dumbbell Chest Press</a></td><td>2</td><td>8-12</td><td>8–10 kg/hand</td></tr><tr><td><a href="#ex-seated-bicep-curl">Seated Dumbbell Bicep Curl</a></td><td>2</td><td>6-10</td><td>6–8 kg/hand</td></tr><tr><td><a href="#ex-cable-tricep-pushdown">Standing Cable Tricep Pushdown</a></td><td>3</td><td>8-12</td><td>15–20 kg</td></tr><tr><td><a href="#ex-lat-pulldown">Lat Pulldown (Wide & Close Grip)</a></td><td>3</td><td>6-10</td><td>30–35 kg</td></tr><tr><td><a href="#ex-machine-shoulder-press">Seated Machine Shoulder Press</a></td><td>2</td><td>6-10</td><td>15–20 kg</td></tr><tr><td><a href="#ex-hammer-curl">Standing Dumbbell Hammer Curl</a></td><td>2</td><td>6-10</td><td>6–8 kg/hand</td></tr><tr><td><a href="#ex-cable-crunch">Cable Crunch</a></td><td>3</td><td>8-12</td><td>20–25 kg</td></tr></table></div>
-<div class="dark"><b>Notes:</b><ul><li>Give yourself a minimum of 2-3 minutes between sets — full recovery lets you lift more, with better control</li><li>Incline press: keep your elbows at about 45° to your torso so the upper chest does the work</li></ul></div>
+<div class="dark"><b>Notes:</b><ul><li>Give yourself a minimum of 2-3 minutes between sets; full recovery lets you lift more, with better control</li><li>Incline press: keep your elbows at about 45° to your torso so the upper chest does the work</li></ul></div>
 </section><section id="ex-incline-db-press-how-to">
   <div class="chip">UPPER A</div>
   <h2 style="margin-top:2px">Incline Dumbbell Chest Press</h2>
@@ -514,13 +517,13 @@ h1{font-size:26px}
 </section><section id="lower-a">
 <div class="chip">WORKOUT 2</div><h2 style="margin-top:2px">Lower A</h2>
 <div class="tw"><table><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Start</th></tr><tr><td><a href="#ex-hack-squat">Hack Squat</a></td><td>2</td><td>6-8</td><td>empty sled</td></tr><tr><td><a href="#ex-prone-hamstring-curl">Prone (Lying) Hamstring Curl</a></td><td>3</td><td>8-12</td><td>20–25 kg</td></tr><tr><td><a href="#ex-standing-calf-raise">Standing Calf Raise</a></td><td>3</td><td>8-12</td><td>20–30 kg</td></tr><tr><td><a href="#ex-quad-extension">Seated Quad Extension</a></td><td>2</td><td>6-10</td><td>20–25 kg</td></tr><tr><td><a href="#ex-adductor-machine">Seated Adductor Machine</a></td><td>2</td><td>8-12</td><td>20–25 kg</td></tr><tr><td><a href="#ex-hip-thrust">Hip Thrust Machine</a></td><td>2</td><td>8-12</td><td>30–40 kg</td></tr></table></div>
-<div class="dark"><b>Notes:</b><ul><li>Legs are big muscle groups — allow a full 3-4 minutes between sets</li><li>Protect the complete range of motion, dropping the load if that's what it takes</li><li>Hack squat: set your feet as low on the platform as they'll go while your heels stay planted</li><li>Calf raises: hold the stretched bottom position for 2-3 seconds</li></ul></div>
+<div class="dark"><b>Notes:</b><ul><li>Legs are big muscle groups, so allow a full 3-4 minutes between sets</li><li>Protect the complete range of motion, dropping the load if that's what it takes</li><li>Hack squat: set your feet as low on the platform as they'll go while your heels stay planted</li><li>Calf raises: hold the stretched bottom position for 2-3 seconds</li></ul></div>
 </section><section id="ex-hack-squat">
   <div class="chip">LOWER A</div>
   <h2 style="margin-top:2px">Hack Squat</h2>
   <div class="meta"><span>2 sets</span><span>6–8 reps</span></div>
   <p style="font-size:13.5px;color:var(--mut);margin:4px 0"><b>Substitution:</b> Smith Machine Squats / Barbell Back Squats</p>
-  <div class="start">🏁 <b>Beginner start:</b> empty sled — add 10–20 kg total if easy<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
+  <div class="start">🏁 <b>Beginner start:</b> empty sled (add 10–20 kg total if easy)<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1060" style="width:100%;height:auto;display:block" font-family="Helvetica, Arial, sans-serif">
 <defs><marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7e77"/></marker></defs>
 <rect width="900" height="1060" fill="#f2f7f6"/>
@@ -558,7 +561,7 @@ h1{font-size:26px}
   <h2 style="margin-top:2px">Standing Calf Raise</h2>
   <div class="meta"><span>3 sets</span><span>8–12 reps</span></div>
   <p style="font-size:13.5px;color:var(--mut);margin:4px 0"><b>Substitution:</b> Straight Leg Leg Press Calf Raise (LOWER B variation)</p>
-  <div class="start">🏁 <b>Beginner start:</b> 20–30 kg — the pause makes it heavy<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
+  <div class="start">🏁 <b>Beginner start:</b> 20–30 kg (the pause makes it heavy)<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1060" style="width:100%;height:auto;display:block" font-family="Helvetica, Arial, sans-serif">
 <defs><marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7e77"/></marker></defs>
 <rect width="900" height="1060" fill="#f2f7f6"/>
@@ -660,7 +663,7 @@ h1{font-size:26px}
   <h2 style="margin-top:2px">Seated Dumbbell Lateral Raise</h2>
   <div class="meta"><span>3 sets</span><span>8–12 reps</span></div>
   <p style="font-size:13.5px;color:var(--mut);margin:4px 0"><b>Substitution:</b> Machine Lateral Raises / Standing Cable Lateral Raises</p>
-  <div class="start">🏁 <b>Beginner start:</b> 4 kg per hand — genuinely<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
+  <div class="start">🏁 <b>Beginner start:</b> 4 kg per hand, genuinely<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1060" style="width:100%;height:auto;display:block" font-family="Helvetica, Arial, sans-serif">
 <defs><marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7e77"/></marker></defs>
 <rect width="900" height="1060" fill="#f2f7f6"/>
@@ -756,13 +759,13 @@ h1{font-size:26px}
 </section><section id="lower-b">
 <div class="chip">WORKOUT 4</div><h2 style="margin-top:2px">Lower B</h2>
 <div class="tw"><table><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Start</th></tr><tr><td><a href="#ex-rdl-how-to">Barbell RDL (Romanian Deadlift)</a></td><td>2</td><td>6-10</td><td>empty 20 kg bar</td></tr><tr><td><a href="#ex-leg-press">Plate Loaded Leg Press</a></td><td>2</td><td>8-12</td><td>sled + 20–40 kg</td></tr><tr><td><a href="#ex-standing-calf-raise">Standing Calf Raise</a></td><td>3</td><td>8-12</td><td>on leg press, sled + 0–20 kg</td></tr><tr><td><a href="#ex-seated-hamstring-curl">Seated Hamstring Curl</a></td><td>2</td><td>8-12</td><td>20–25 kg</td></tr><tr><td><a href="#ex-adductor-machine">Seated Adductor Machine</a></td><td>2</td><td>6-10</td><td>20–25 kg</td></tr><tr><td><a href="#ex-lower-ab-leg-raise">Lower Abdominal Leg Raise</a></td><td>3</td><td>8-12</td><td>bodyweight</td></tr></table></div>
-<div class="dark"><b>Notes:</b><ul><li>RDLs: the bar stays brushing your shins, the hips travel back, and the knees give only SLIGHTLY on the descent</li><li>Leg press: start with feet around hip width, wherever feels natural</li><li>Leg raises: the movement is a curl of the spine, not a swing of the legs</li><li>That completes the rotation — next strength day starts back at Upper A. Sleep and eat well to recover.</li></ul></div>
+<div class="dark"><b>Notes:</b><ul><li>RDLs: the bar stays brushing your shins, the hips travel back, and the knees give only SLIGHTLY on the descent</li><li>Leg press: start with feet around hip width, wherever feels natural</li><li>Leg raises: the movement is a curl of the spine, not a swing of the legs</li><li>That completes the rotation; the next strength day starts back at Upper A. Sleep and eat well to recover.</li></ul></div>
 </section><section id="ex-rdl-how-to">
   <div class="chip">LOWER B</div>
   <h2 style="margin-top:2px">Barbell RDL (Romanian Deadlift)</h2>
   <div class="meta"><span>2 sets</span><span>6–10 reps</span></div>
   <p style="font-size:13.5px;color:var(--mut);margin:4px 0"><b>Substitution:</b> Dumbbell RDLs / 45° Hyper Extension</p>
-  <div class="start">🏁 <b>Beginner start:</b> empty 20 kg bar — likely 30–40 kg by set 2<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
+  <div class="start">🏁 <b>Beginner start:</b> empty 20 kg bar (likely 30–40 kg by set 2)<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1060" style="width:100%;height:auto;display:block" font-family="Helvetica, Arial, sans-serif">
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -963,7 +966,7 @@ h1{font-size:26px}
   <h2 style="margin-top:2px">Lower Abdominal Leg Raise</h2>
   <div class="meta"><span>3 sets</span><span>8–12 reps</span></div>
   <p style="font-size:13.5px;color:var(--mut);margin:4px 0"><b>Substitution:</b> Hanging from Roman Chair or pull up bar</p>
-  <div class="start">🏁 <b>Beginner start:</b> bodyweight — bend knees more if too hard<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
+  <div class="start">🏁 <b>Beginner start:</b> bodyweight (bend your knees more if it's too hard)<small>over 12 easy reps → go up one step next set · under 6 → go down</small></div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1060" style="width:100%;height:auto;display:block" font-family="Helvetica, Arial, sans-serif">
 <defs><marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7e77"/></marker></defs>
 <rect width="900" height="1060" fill="#f2f7f6"/>
@@ -981,34 +984,36 @@ h1{font-size:26px}
 <h2>Picking weights and moving up</h2>
 <div class="card">
 <p style="margin-top:0"><i>Worked example: incline dumbbell press, target 8-12 reps.</i></p>
-<p><b>1)</b> Find the load where 10 reps is a genuine fight but rep 8 is guaranteed with clean form. <i>If the 20 kg dumbbells give you a hard-won 10, that's your working weight.</i><br>
-<b>2)</b> Each session, try to beat your logbook by a single rep.<br>
-<b>3)</b> The day you reach a clean 12, take the next increment up (22.5 kg) and drop back to 8.<br>
-<b>4)</b> That loop — add a rep, then add weight — is the entire progression model, for every exercise, indefinitely.</p>
+<ol class="steps">
+<li>Find the load where 10 reps is a genuine fight but rep 8 is guaranteed with clean form. <i>If the 20 kg dumbbells give you a hard-won 10, that's your working weight.</i></li>
+<li>Each session, try to beat your logbook by a single rep.</li>
+<li>The day you reach a clean 12, take the next increment up (22.5 kg) and drop back to 8.</li>
+<li>That loop (add a rep, then add weight) is the entire progression model, for every exercise, indefinitely.</li>
+</ol>
 </div>
-<p>Early on your guesses will miss in both directions: one set dies at 6, another sails past 15. Correct the load next set or next session and carry on. Progress isn't linear either — some days the extra rep isn't there, other days you get two at once. The one hard rule: a rep that needs cheated form doesn't count.</p>
+<p>Early on your guesses will miss in both directions: one set dies at 6, another sails past 15. Correct the load next set or next session and carry on. Progress isn't linear either: some days the extra rep isn't there, other days you get two at once. The one hard rule: a rep that needs cheated form doesn't count.</p>
 <h3>Missed a day?</h3>
-<p>A skipped session is noise. Programmes fail from quitting, not from gaps — one missed day changes nothing as long as you pick the plan straight back up.</p>
-<p><span class="k">Option A:</span> slide the workout to the next free day and push the rest of the week back one.<br>
-<span class="k">Option B:</span> let it go, and do the next workout in the rotation on your next strength day.</p>
-<p>Because the four workouts cycle through your Monday/Wednesday/Friday slots anyway, nothing is ever really lost — the sequence simply continues from wherever you are.</p>
+<p>A skipped session is noise. Programmes fail from quitting, not from gaps; one missed day changes nothing as long as you pick the plan straight back up.</p>
+<p style="margin:8px 0"><span class="k">Option A:</span> slide the workout to the next free day and push the rest of the week back one.</p>
+<p style="margin:8px 0"><span class="k">Option B:</span> let it go, and do the next workout in the rotation on your next strength day.</p>
+<p>Because the four workouts cycle through your Monday/Wednesday/Friday slots anyway, nothing is ever really lost; the sequence simply continues from wherever you are.</p>
 <p><b>Chaotic week?</b> If you only make the gym twice, do the next upper and the next lower in the sequence. Two sessions beats zero, and one rough week leaves no trace.</p>
 </section><section id="cardio">
 <h2>Section 3 · Couch to 5K</h2>
 <h3>Why do cardio at all?</h3>
-<p>You could create the same calorie deficit by simply eating less — but dropping cardio would cost you:</p>
+<p>You could create the same calorie deficit by simply eating less, but dropping cardio would cost you:</p>
 <div class="dark"><ul>
 <li>A stronger heart and lungs, which shows up as better performance under the bar</li>
 <li>Lower blood pressure and a healthier metabolism</li>
 <li>Better insulin sensitivity, so what you eat is routed to muscle more readily</li>
-<li>A lower resting heart rate — which tends to mean deeper, more restorative sleep</li></ul></div>
+<li>A lower resting heart rate, which tends to mean deeper, more restorative sleep</li></ul></div>
 <h3>How it works</h3>
 <div class="card">
 <ul style="margin:4px 0;padding-left:20px">
-<li><b>Nine phases over 14 weeks</b>, adapted from the NHS Couch to 5K with a gentler build — phases 1–5 last two weeks each (do the week, then repeat it), phases 6–9 one week each.</li>
+<li><b>Nine phases over 14 weeks</b>, adapted from the NHS Couch to 5K with a gentler build: phases 1–5 last two weeks each (do the week, then repeat it), phases 6–9 one week each.</li>
 <li><b>Three sessions a week</b> on your running days, strength on the days in between, one full rest day.</li>
 <li>Every session starts and ends with a <b>5-minute walk</b>.</li>
-<li>The plan is built on <b>time, not speed</b> — if the pace feels too hard, slow down. A very slow, conversational jog counts.</li>
+<li>The plan is built on <b>time, not speed</b>: if the pace feels too hard, slow down. A very slow, conversational jog counts.</li>
 <li>Distances are rough estimates at 4.5 km/h walking and 7 km/h jogging.</li>
 </ul>
 </div>
@@ -1053,7 +1058,7 @@ h1{font-size:26px}
 <div class="card">
 <div class="chip">PHASE 5 · WEEKS 9–10</div>
 <h3 style="margin:8px 0 2px">First continuous 20-minute run</h3>
-<p style="margin:4px 0;font-size:14px">Three different sessions — do all three in one week, then repeat the week.</p>
+<p style="margin:4px 0;font-size:14px">Three different sessions: do all three in one week, then repeat the week.</p>
 <div class="tw"><table><tr><th>Session</th><th>Pattern</th><th>Running</th><th>Total</th></tr>
 <tr><td>1</td><td>WU → R5 → W3 → R5 → W3 → R5 → CD</td><td>15 min</td><td>31:00</td></tr>
 <tr><td>2</td><td>WU → R8 → W5 → R8 → CD</td><td>16 min</td><td>31:00</td></tr>
@@ -1086,7 +1091,7 @@ h1{font-size:26px}
 <div class="meta"><span>30 min running</span><span>40:00 total</span><span>≈4.3 km</span></div>
 </div>
 <h3>From 30 minutes to a full 5K</h3>
-<p>Phase 9 gets you to <b>30 minutes of continuous running</b> — at the estimated pace that's about 3.5 km, not a literal 5 km. A four-week bridge closes the gap by nudging each run a little longer:</p>
+<p>Phase 9 gets you to <b>30 minutes of continuous running</b>. At the estimated pace that's about 3.5 km, not a literal 5 km. A four-week bridge closes the gap by nudging each run a little longer:</p>
 <div class="tw"><table><tr><th>Bridge week</th><th>Run 1</th><th>Run 2</th><th>Run 3</th></tr>
 <tr><td>1</td><td>30 min</td><td>32 min</td><td>33 min</td></tr>
 <tr><td>2</td><td>33 min</td><td>35 min</td><td>36 min</td></tr>
@@ -1099,23 +1104,23 @@ h1{font-size:26px}
 <li>Hard but manageable? Repeat the phase before moving on</li>
 <li>Never stack two sessions together to make up a missed one</li>
 <li>The rest day stays a genuine rest day</li>
-<li>With strength on the in-between days this is a six-day training week — keep the strength work beginner-level and don't train to failure while you adapt</li></ul></div>
+<li>With strength on the in-between days this is a six-day training week, so keep the strength work beginner-level and don't train to failure while you adapt</li></ul></div>
 <div class="callout">Stop the session if you feel dizzy, faint or unusually weak, or notice palpitations, chest pain or persistent nausea. If you're eating in a significant calorie deficit or have any medical conditions, check the plan with a clinician first.</div>
 <p style="font-size:12.5px;color:var(--mut)">Based on the <a href="https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/" target="_blank" rel="noopener">NHS Couch to 5K running plan</a>, stretched to a gentler 14-week progression.</p>
 </section><section id="plan">
 <h2>Section 4 · So what now?</h2>
-<p>None of this needs memorising — the page isn't going anywhere. The whole programme compresses to a single instruction: start the week, and do the next session on the list.</p>
+<p>None of this needs memorising; the page isn't going anywhere. The whole programme compresses to a single instruction: start the week, and do the next session on the list.</p>
 <div class="card">
-<p style="margin:2px 0"><span class="k">Sunday:</span> rest — shop for groceries (protein, carbs, fats) and get a proper night's sleep</p>
-<p style="margin:2px 0"><span class="k">Monday:</span> strength — <a href="#upper-a">Upper A</a> — warm up properly, find your starting weights</p>
+<p style="margin:2px 0"><span class="k">Sunday:</span> rest. Shop for groceries (protein, carbs, fats) and get a proper night's sleep</p>
+<p style="margin:2px 0"><span class="k">Monday:</span> strength · <a href="#upper-a">Upper A</a>. Warm up properly and find your starting weights</p>
 <p style="margin:2px 0"><span class="k">Tuesday:</span> <a href="#cardio">Couch to 5K</a></p>
-<p style="margin:2px 0"><span class="k">Wednesday:</span> strength — <a href="#lower-a">Lower A</a></p>
+<p style="margin:2px 0"><span class="k">Wednesday:</span> strength · <a href="#lower-a">Lower A</a></p>
 <p style="margin:2px 0"><span class="k">Thursday:</span> <a href="#cardio">Couch to 5K</a></p>
-<p style="margin:2px 0"><span class="k">Friday:</span> strength — <a href="#upper-b">Upper B</a></p>
+<p style="margin:2px 0"><span class="k">Friday:</span> strength · <a href="#upper-b">Upper B</a></p>
 <p style="margin:2px 0"><span class="k">Saturday:</span> <a href="#cardio">Couch to 5K</a></p>
 </div>
-<p style="font-size:13.5px;color:var(--mut)">Next week your strength days carry on from where you left off — Monday is <a href="#lower-b">Lower B</a>, then the cycle starts over with Upper A.</p>
-<p class="disc">Video tutorials link out to independent coaching channels (Renaissance Periodization, Jeff Nippard, Scott Herman, Athlean-X and others). Compiled for personal use — educational reference only, not medical advice.</p>
+<p style="font-size:13.5px;color:var(--mut)">Next week your strength days carry on from where you left off: Monday is <a href="#lower-b">Lower B</a>, then the cycle starts over with Upper A.</p>
+<p class="disc">Video tutorials link out to independent coaching channels (Renaissance Periodization, Jeff Nippard, Scott Herman, Athlean-X and others). Compiled for personal use. Educational reference only; not medical advice.</p>
 </section>
 <footer></footer></main>
 <script>
