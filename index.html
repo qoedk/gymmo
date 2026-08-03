@@ -11,6 +11,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:58px}
 body{margin:0;font-family:-apple-system,Helvetica,Arial,sans-serif;color:var(--txt);background:var(--bg);line-height:1.55;font-size:16px}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:var(--bg) url("kanagawa.jpg") center bottom/cover no-repeat}
 header{position:sticky;top:0;z-index:10;background:var(--navy);box-shadow:0 1px 8px rgba(12,26,34,.25)}
 .bar{display:flex;align-items:center;justify-content:space-between;max-width:1140px;margin:0 auto;padding:10px 14px}
 .brand{display:flex;align-items:center;gap:9px;color:#fff;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.3px}
@@ -33,6 +34,9 @@ nav a .ic{width:15px;height:15px}
 nav a:hover,nav a:active{background:var(--blue)}
 }
 main{max-width:720px;margin:0 auto;padding:14px}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:rgba(242,247,246,.72);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);
+-webkit-mask-image:linear-gradient(to right,transparent calc(50% - 470px),#000 calc(50% - 360px),#000 calc(50% + 360px),transparent calc(50% + 470px));
+mask-image:linear-gradient(to right,transparent calc(50% - 470px),#000 calc(50% - 360px),#000 calc(50% + 360px),transparent calc(50% + 470px))}
 section{margin-bottom:28px}
 h1{color:var(--navy);font-size:30px;margin:18px 0 4px}
 h2{color:#2b6390;font-size:22px;margin:26px 0 8px}
